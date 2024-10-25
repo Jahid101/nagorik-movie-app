@@ -1,9 +1,15 @@
-import { Button } from "@/components/ui/button";
+import MovieList from '@/components/movie/MovieList';
+import TopNavBar from '@/components/top/TopNavBar';
 
-export default function Home() {
+const Home = () => {
+
   return (
-    <div>
-      <Button>Welcome! Still coding ...</Button>
+    <div className="mb-10">
+      <TopNavBar />
+      <div className="pt-32"></div>
+      <MovieList />
     </div>
   );
-}
+};
+
+export default Home;
